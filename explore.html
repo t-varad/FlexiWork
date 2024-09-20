@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6; /* Light orange shade */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Align left and right sections */
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        /* Logo styling */
+        .logo-section {
+            text-align: center;
+            margin-top: 20px; /* Space between navbar and logo */
+        }
+
+        .logo img {
+            height: 50px;  /* Adjust the height as needed */
+            width: auto;  /* Keep the width proportional */
+        }
+
+        .main-heading {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .section {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1; /* Make sections the same size */
+            max-width: 300px; /* Optional: limit max width */
+            text-align: center; /* Center align text */
+        }
+
+        .buyer, .freelancer {
+            background-color: #ffffff;
+        }
+
+        button {
+            background-color: orange; /* Button color */
+            color: white; /* Text color */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        button:hover {
+            background-color: darkorange; /* Hover color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="job.html">Find Work</a>
+            <a href="buyer_explore.html">Services</a>
+        </div>
+    </nav>
+
+    <!-- Logo Section (below the navbar) -->
+    <div class="logo-section">
+        <a href="index.html" class="logo">
+            <img src="flexiwork.png" alt="FlexiWork Logo">
+        </a>
+    </div>
+
+    <h1 class="main-heading">Explore FlexiWork Today!</h1>
+
+    <div class="container">
+        <div class="section buyer">
+            <h2>I am a Client!</h2>
+            <p>Looking for the best talent to bring your projects to life? <br><br><br></p>
+            <button onclick="location.href='buyer_explore.html'">Explore</button>
+        </div>
+        <div class="section freelancer">
+            <h2>I am a Freelancer!</h2>
+            <p>Ready to showcase your skills and work with exciting clients? <br><br> </p><br>
+            <button onclick="location.href='job.html'">Explore</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .profile-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .profile {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none; /* Hide all profiles by default */
+        }
+
+        .back-button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="nav-right">
+                <a href="#profile">Profile</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <h1>Video Profiles</h1>
+
+        <div class="profile" id="peter">
+            <h2>Peter King</h2>
+            <p><strong>Skills:</strong> Video Editor</p>
+            <p><strong>Experience:</strong> 4 years in video editing</p>
+            <p><strong>Rate:</strong> $30/hour</p>
+            <p><strong>Contact:</strong> peter.king@freelance.com</p>
+        </div>
+
+        <div class="profile" id="lucy">
+            <h2>Lucy Smith</h2>
+            <p><strong>Skills:</strong> Cinematographer</p>
+            <p><strong>Experience:</strong> 5 years in cinematography</p>
+            <p><strong>Rate:</strong> $45/hour</p>
+            <p><strong>Contact:</strong> lucy.smith@freelance.com</p>
+        </div>
+
+        <div class="profile" id="harry">
+            <h2>Harry Potter</h2>
+            <p><strong>Skills:</strong> Motion Graphics Designer</p>
+            <p><strong>Experience:</strong> 3 years in motion graphics</p>
+            <p><strong>Rate:</strong> $50/hour</p>
+            <p><strong>Contact:</strong> harry.potter@freelance.com</p>
+        </div>
+
+        <div class="profile" id="mary">
+            <h2>Mary Johnson</h2>
+            <p><strong>Skills:</strong> Video Producer</p>
+            <p><strong>Experience:</strong> 6 years in video production</p>
+            <p><strong>Rate:</strong> $60/hour</p>
+            <p><strong>Contact:</strong> mary.johnson@freelance.com</p>
+        </div>
+
+        <div class="profile" id="steve">
+            <h2>Steve Brown</h2>
+            <p><strong>Skills:</strong> Scriptwriter</p>
+            <p><strong>Experience:</strong> 4 years in scriptwriting</p>
+            <p><strong>Rate:</strong> $35/hour</p>
+            <p><strong>Contact:</strong> steve.brown@freelance.com</p>
+        </div>
+
+        <button class="back-button" onclick="window.history.back()">Back to Services</button>
+    </div>
+
+    <script>
+        const hash = window.location.hash;
+        if (hash) {
+            const profiles = document.querySelectorAll('.profile');
+            profiles.forEach(profile => profile.style.display = 'none');
+            const profileToShow = document.querySelector(hash);
+            if (profileToShow) {
+                profileToShow.style.display = 'block';
+            }
+        } else {
+            window.location.href = 'video_production_services.html';
+        }
+    </script>
+</body>
+</html>

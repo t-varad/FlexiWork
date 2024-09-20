@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6; /* Light orange background */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .freelancer {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            max-width: 250px;
+            text-align: center;
+        }
+
+        button {
+            background-color: orange; /* Button color */
+            color: white; /* Text color */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        button:hover {
+            background-color: darkorange; /* Hover color */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+           
+        </div>
+    </nav>
+
+    <h1 style="text-align: center;">Available Customer Support Agents</h1>
+
+    <div class="container">
+        <div class="freelancer">
+            <h2>Alice Smith</h2>
+            <p>Technical Support Specialist</p>
+            <button onclick="location.href='customer_support_profiles.html#alice'">Show Profile</button>
+        </div>
+        <div class="freelancer">
+            <h2>John Doe</h2>
+            <p>Customer Service Representative</p>
+            <button onclick="location.href='customer_support_profiles.html#john'">Show Profile</button>
+        </div>
+        <div class="freelancer">
+            <h2>Susan Brown</h2>
+            <p>Client Relations Expert</p>
+            <button onclick="location.href='customer_support_profiles.html#susan'">Show Profile</button>
+        </div>
+        <div class="freelancer">
+            <h2>Michael Green</h2>
+            <p>Help Desk Analyst</p>
+            <button onclick="location.href='customer_support_profiles.html#michael'">Show Profile</button>
+        </div>
+        <div class="freelancer">
+            <h2>Laura Johnson</h2>
+            <p>Customer Experience Specialist</p>
+            <button onclick="location.href='customer_support_profiles.html#laura'">Show Profile</button>
+        </div>
+    </div>
+</body>
+</html>

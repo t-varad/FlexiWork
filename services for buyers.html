@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services for Buyers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6; /* Light orange background */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .services-heading {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .service {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+        }
+
+        .service h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .service p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .service button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .service button:hover {
+            background-color: darkorange;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="nav-right">
+                <a href="#profile">Profile</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="services-heading">Services Provided for Buyers</h1>
+
+    <div class="services-container">
+        <div class="service">
+            <h2>Post a Project</h2>
+            <p>Describe your project and post it for freelancers to bid on. It's fast, easy, and free.</p>
+            <button onclick="location.href='#post-project'">Post a Project</button>
+        </div>
+
+        <div class="service">
+            <h2>Browse Freelancers</h2>
+            <p>Search for top-rated freelancers by skill, location, and experience. Review their portfolios before hiring.</p>
+            <button onclick="location.href='#browse-freelancers'">Browse Freelancers</button>
+        </div>
+
+        <div class="service">
+            <h2>Manage Your Projects</h2>
+            <p>Stay on top of your projects with an intuitive dashboard. Track progress, communicate, and share files with ease.</p>
+            <button onclick="location.href='#manage-projects'">Manage Projects</button>
+        </div>
+
+        <div class="service">
+            <h2>Safe Payments</h2>
+            <p>Make secure payments via our platform. Only release payment once you are satisfied with the work delivered.</p>
+            <button onclick="location.href='#payments'">Learn More</button>
+        </div>
+
+        <div class="service">
+            <h2>Customer Support</h2>
+            <p>We provide 24/7 customer support to assist you with any issues you may face while using our platform.</p>
+            <button onclick="location.href='#support'">Contact Support</button>
+        </div>
+    </div>
+</body>
+</html>

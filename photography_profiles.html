@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .profile-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .profile {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none; /* Hide all profiles by default */
+        }
+
+        .back-button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="nav-right">
+                <a href="#profile">Profile</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <h1>Photography Profiles</h1>
+
+        <div class="profile" id="emily">
+            <h2>Emily Carter</h2>
+            <p><strong>Skills:</strong> Wedding Photographer</p>
+            <p><strong>Experience:</strong> 6 years in wedding photography</p>
+            <p><strong>Rate:</strong> $150/event</p>
+            <p><strong>Contact:</strong> emily.carter@freelance.com</p>
+        </div>
+
+        <div class="profile" id="michael">
+            <h2>Michael Johnson</h2>
+            <p><strong>Skills:</strong> Portrait Photographer</p>
+            <p><strong>Experience:</strong> 4 years in portrait photography</p>
+            <p><strong>Rate:</strong> $100/session</p>
+            <p><strong>Contact:</strong> michael.johnson@freelance.com</p>
+        </div>
+
+        <div class="profile" id="sophia">
+            <h2>Sophia Wilson</h2>
+            <p><strong>Skills:</strong> Event Photographer</p>
+            <p><strong>Experience:</strong> 5 years in event photography</p>
+            <p><strong>Rate:</strong> $120/event</p>
+            <p><strong>Contact:</strong> sophia.wilson@freelance.com</p>
+        </div>
+
+        <div class="profile" id="lucas">
+            <h2>Lucas Martinez</h2>
+            <p><strong>Skills:</strong> Product Photographer</p>
+            <p><strong>Experience:</strong> 3 years in product photography</p>
+            <p><strong>Rate:</strong> $80/session</p>
+            <p><strong>Contact:</strong> lucas.martinez@freelance.com</p>
+        </div>
+
+        <div class="profile" id="ava">
+            <h2>Ava Davis</h2>
+            <p><strong>Skills:</strong> Commercial Photographer</p>
+            <p><strong>Experience:</strong> 7 years in commercial photography</p>
+            <p><strong>Rate:</strong> $200/project</p>
+            <p><strong>Contact:</strong> ava.davis@freelance.com</p>
+        </div>
+
+        <button class="back-button" onclick="window.history.back()">Back to Services</button>
+    </div>
+
+    <script>
+        const hash = window.location.hash;
+        if (hash) {
+            const profiles = document.querySelectorAll('.profile');
+            profiles.forEach(profile => profile.style.display = 'none');
+            const profileToShow = document.querySelector(hash);
+            if (profileToShow) {
+                profileToShow.style.display = 'block';
+            }
+        } else {
+            window.location.href = 'photography_services.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .profile-container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-container h1 {
+            text-align: center;
+        }
+
+        .profile-info {
+            margin-top: 20px;
+        }
+
+        .profile-info p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .profile-info strong {
+            color: #333;
+        }
+    </style>
+    <script>
+        function loadProfile() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            document.getElementById('freelancer-name').textContent = name;
+        }
+    </script>
+</head>
+<body onload="loadProfile()">
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="nav-right">
+                <a href="#profile">Profile</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <h1 id="freelancer-name"></h1>
+        <div class="profile-info">
+            <p><strong>Skills:</strong> HTML, CSS, JavaScript, PHP</p>
+            <p><strong>Experience:</strong> 5 years of experience in web development</p>
+            <p><strong>Projects Completed:</strong> 50+ projects for various clients</p>
+            <p><strong>Client Reviews:</strong> 4.8/5 stars based on 30 reviews</p>
+            <p><strong>Portfolio:</strong> <a href="#">View Portfolio</a></p>
+            <p><strong>Rate:</strong> $50 per hour</p>
+            <p><strong>Availability:</strong> Full-time freelancer</p>
+        </div>
+    </div>
+</body>
+</html>

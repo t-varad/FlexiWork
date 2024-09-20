@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Management Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .freelancer {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            max-width: 250px;
+            text-align: center;
+        }
+
+        button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+          
+        </div>
+    </nav>
+
+    <h1 style="text-align: center;">Available Social Management Experts</h1>
+
+    <div class="container">
+        <div class="freelancer">
+            <h2>Alice Green</h2>
+            <p>Social Media Manager</p>
+            <button onclick="location.href='social_profiles.html#alice'">Show Profile</button>
+        </div>
+        <div class="freelancer">
+            <h2>Bob White</h2>
+            <p>Content Creator</p>
+            <button onclick="location.href='social_profiles.html#bob'">Show Profile</button>
+        </div>
+        <div class="freelancer">
+            <h2>Cathy Black</h2>
+            <p>Community Manager</p>
+            <button onclick="location.href='social_profiles.html#cathy'">Show Profile</button>
+        </div>
+        <div class="freelancer">
+            <h2>David Brown</h2>
+            <p>Social Media Strategist</p>
+            <button onclick="location.href='social_profiles.html#david'">Show Profile</button>
+        </div>
+        <div class="freelancer">
+            <h2>Eve Davis</h2>
+            <p>Brand Ambassador</p>
+            <button onclick="location.href='social_profiles.html#eve'">Show Profile</button>
+        </div>
+    </div>
+</body>
+</html>

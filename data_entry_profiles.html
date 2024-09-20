@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry Engineers Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6; /* Light orange background */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .profile-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .profile {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none; /* Hide all profiles by default */
+        }
+
+        .back-button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="nav-right">
+                <a href="#profile">Profile</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <h1>Data Entry Engineers Profiles</h1>
+
+        <!-- Profile for Olivia Johnson -->
+        <div class="profile" id="olivia">
+            <h2>Olivia Johnson</h2>
+            <p><strong>Skills:</strong> Data Entry and Management</p>
+            <p><strong>Experience:</strong> 4 years in data entry</p>
+            <p><strong>Rate:</strong> $20/hour</p>
+            <p><strong>Contact:</strong> olivia.johnson@freelance.com</p>
+        </div>
+
+        <!-- Profile for James Smith -->
+        <div class="profile" id="james">
+            <h2>James Smith</h2>
+            <p><strong>Skills:</strong> Excel Data Processing</p>
+            <p><strong>Experience:</strong> 5 years in data entry</p>
+            <p><strong>Rate:</strong> $25/hour</p>
+            <p><strong>Contact:</strong> james.smith@freelance.com</p>
+        </div>
+
+        <!-- Profile for Emily Davis -->
+        <div class="profile" id="emily">
+            <h2>Emily Davis</h2>
+            <p><strong>Skills:</strong> Database Management</p>
+            <p><strong>Experience:</strong> 3 years in data entry</p>
+            <p><strong>Rate:</strong> $22/hour</p>
+            <p><strong>Contact:</strong> emily.davis@freelance.com</p>
+        </div>
+
+        <!-- Profile for Michael Brown -->
+        <div class="profile" id="michael">
+            <h2>Michael Brown</h2>
+            <p><strong>Skills:</strong> Document Formatting</p>
+            <p><strong>Experience:</strong> 4 years in data entry</p>
+            <p><strong>Rate:</strong> $20/hour</p>
+            <p><strong>Contact:</strong> michael.brown@freelance.com</p>
+        </div>
+
+        <!-- Profile for Sophia Wilson -->
+        <div class="profile" id="sophia">
+            <h2>Sophia Wilson</h2>
+            <p><strong>Skills:</strong> Data Collection and Analysis</p>
+            <p><strong>Experience:</strong> 6 years in data entry</p>
+            <p><strong>Rate:</strong> $30/hour</p>
+            <p><strong>Contact:</strong> sophia.wilson@freelance.com</p>
+        </div>
+
+        <!-- Profile for David Garcia -->
+        <div class="profile" id="david">
+            <h2>David Garcia</h2>
+            <p><strong>Skills:</strong> Online Data Entry</p>
+            <p><strong>Experience:</strong> 2 years in data entry</p>
+            <p><strong>Rate:</strong> $18/hour</p>
+            <p><strong>Contact:</strong> david.garcia@freelance.com</p>
+        </div>
+
+        <!-- Profile for Ava Martinez -->
+        <div class="profile" id="ava">
+            <h2>Ava Martinez</h2>
+            <p><strong>Skills:</strong> Data Cleansing and Validation</p>
+            <p><strong>Experience:</strong> 5 years in data entry</p>
+            <p><strong>Rate:</strong> $28/hour</p>
+            <p><strong>Contact:</strong> ava.martinez@freelance.com</p>
+        </div>
+
+        <!-- Profile for Noah Rodriguez -->
+        <div class="profile" id="noah">
+            <h2>Noah Rodriguez</h2>
+            <p><strong>Skills:</strong> Survey Data Entry</p>
+            <p><strong>Experience:</strong> 3 years in data entry</p>
+            <p><strong>Rate:</strong> $22/hour</p>
+            <p><strong>Contact:</strong> noah.rodriguez@freelance.com</p>
+        </div>
+
+        <!-- Profile for Isabella Lee -->
+        <div class="profile" id="isabella">
+            <h2>Isabella Lee</h2>
+            <p><strong>Skills:</strong> Data Processing for Reports</p>
+            <p><strong>Experience:</strong> 4 years in data entry</p>
+            <p><strong>Rate:</strong> $24/hour</p>
+            <p><strong>Contact:</strong> isabella.lee@freelance.com</p>
+        </div>
+
+        <!-- Profile for Jackson Taylor -->
+        <div class="profile" id="jackson">
+            <h2>Jackson Taylor</h2>
+            <p><strong>Skills:</strong> Data Migration Services</p>
+            <p><strong>Experience:</strong> 6 years in data entry</p>
+            <p><strong>Rate:</strong> $30/hour</p>
+            <p><strong>Contact:</strong> jackson.taylor@freelance.com</p>
+        </div>
+
+        <button class="back-button" onclick="window.history.back()">Back to Services</button>
+    </div>
+
+    <script>
+        // Get the URL hash
+        const hash = window.location.hash;
+        if (hash) {
+            // Hide all profiles
+            const profiles = document.querySelectorAll('.profile');
+            profiles.forEach(profile => profile.style.display = 'none');
+
+            // Show the specific profile based on the hash
+            const profileToShow = document.querySelector(hash);
+            if (profileToShow) {
+                profileToShow.style.display = 'block';
+            }
+        } else {
+            // If no hash, redirect back to the services page
+            window.location.href = 'data_entry_services.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Job - FLEXIWORK</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            padding-top: 60px; /* Prevent content from overlapping with fixed navbar */
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffa500;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Search Section */
+        .search-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .search-section h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .search-bar {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ffa500;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: darkorange;
+        }
+
+        /* Recommend Me a Job Section */
+        .recommend-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .recommend-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .recommend-section p {
+            margin-bottom: 10px; /* Reduced margin to shift text up */
+        }
+
+        .recommend-button {
+            padding: 15px 20px;
+            border: none;
+            background-color: #ffa500;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+            text-decoration: none; /* Make it behave like a button */
+        }
+
+        .recommend-button:hover {
+            background-color: darkorange;
+        }
+
+
+      
+
+       
+
+        /* Job Listing Section */
+        .job-listing {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .job-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+
+        .job-card:hover {
+            transform: scale(1.05);
+        }
+
+        .job-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .job-description {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .job-details {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .apply-button {
+            background-color: #ffa500;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .apply-button:hover {
+            background-color: #e69500;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .job-card {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="buyer_explore.html">Services</a></li>
+            <li><a href="job.html">Find a Job</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Search Section -->
+        <section class="search-section">
+            <h1>Find the Perfect Job</h1>
+            <input type="text" class="search-bar" placeholder="Search for jobs, skills, or companies...">
+            <br>
+            <button class="search-button">Search</button>
+        </section>
+
+        <!-- Recommend Me a Job Section -->
+        <section class="recommend-section">
+            <h2>Not Sure What to Look For?</h2>
+            <p>Get AI recommended jobs for you!</p>
+            <!-- Direct link to recommend.html -->
+            <a href="recommend.html" class="recommend-button">Recommend Me a Job</a>
+        </section>
+
+       
+
+        <!-- Job Listing Section -->
+        <section class="job-listing">
+            <!-- Job Card 1 -->
+            <div class="job-card">
+                <div class="job-title">Content Writer Needed</div>
+                <div class="job-description">
+                    Looking for an experienced content writer to write blog posts for a tech website. Topics include AI, cloud computing, and software development.
+                </div>
+                <div class="job-details">
+                    <strong>Budget:</strong> $100 - $150 <br>
+                    <strong>Deadline:</strong> 7 days
+                </div>
+                <!-- <button class="apply-button">Apply Now</button> -->
+            </div>
+
+            <!-- Job Card 2 -->
+            <div class="job-card">
+                <div class="job-title">Graphic Designer for Logo Design</div>
+                <div class="job-description">
+                    We need a talented graphic designer to create a logo for our new startup. The logo should be modern, clean, and suitable for a tech-focused business.
+                </div>
+                <div class="job-details">
+                    <strong>Budget:</strong> $200 <br>
+                    <strong>Deadline:</strong> 5 days
+                </div>
+                <!-- <button class="apply-button">Apply Now</button> -->
+            </div>
+    
+            <!-- Job Card 3 -->
+            <div class="job-card">
+                <div class="job-title">Web Developer for E-Commerce Website</div>
+                <div class="job-description">
+                    We are seeking an experienced web developer to build a fully functional e-commerce website. Must have experience with Shopify or WooCommerce.
+                </div>
+                <div class="job-details">
+                    <strong>Budget:</strong> $500 - $1000 <br>
+                    <strong>Deadline:</strong> 14 days
+                </div>
+                <!-- <button class="apply-button">Apply Now</button> -->
+            </div>
+
+            <!-- Add more job cards as needed -->
+        </section>
+    </div>
+</body>
+</html>

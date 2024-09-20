@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6; /* Light orange background */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .profile-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .profile {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile h1 {
+            margin-bottom: 10px;
+        }
+
+        .profile p {
+            margin: 10px 0;
+        }
+
+        .back-button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="nav-right">
+                <a href="#profile">Profile</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile">
+            <h1>Freelancer Profile: <span id="freelancer-name"></span></h1>
+            <p><strong>Expertise:</strong> <span id="expertise"></span></p>
+            <p><strong>Languages:</strong> <span id="languages"></span></p>
+            <p><strong>Bio:</strong></p>
+            <p id="bio"></p>
+            <button class="back-button" onclick="window.history.back()">Back</button>
+        </div>
+    </div>
+
+    <script>
+        // Simulating data based on query parameter (name)
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+
+        const freelancers = {
+            'Alice Walker': {
+                expertise: 'English to Spanish Translation',
+                languages: 'English, Spanish',
+                bio: 'Alice has over 5 years of experience in translating various documents and literature from English to Spanish.'
+            },
+            'Bob Martinez': {
+                expertise: 'French and Italian Translation',
+                languages: 'French, Italian',
+                bio: 'Bob specializes in translating legal and technical documents and has a degree in Linguistics.'
+            },
+            'Carol Kim': {
+                expertise: 'Korean to English Translation',
+                languages: 'Korean, English',
+                bio: 'Carol is a native Korean speaker with extensive experience in interpreting and translating in business settings.'
+            },
+            'David Chen': {
+                expertise: 'Chinese to English Translation',
+                languages: 'Chinese, English',
+                bio: 'David has worked with international companies, providing translation for marketing materials and contracts.'
+            },
+            'Emma Johnson': {
+                expertise: 'English to German Translation',
+                languages: 'English, German',
+                bio: 'Emma is a certified translator with a focus on technical manuals and websites.'
+            },
+            'Frank Brown': {
+                expertise: 'Japanese Translation',
+                languages: 'Japanese, English',
+                bio: 'Frank has a passion for translating anime and manga, as well as professional documents.'
+            },
+            'Grace Taylor': {
+                expertise: 'Portuguese and Spanish Translation',
+                languages: 'Portuguese, Spanish',
+                bio: 'Grace has worked on several localization projects for apps and websites.'
+            },
+            'Henry Wilson': {
+                expertise: 'Arabic Translation',
+                languages: 'Arabic, English',
+                bio: 'Henry is experienced in translating various media, including articles and literature.'
+            },
+            'Isabelle Garcia': {
+                expertise: 'Hindi to English Translation',
+                languages: 'Hindi, English',
+                bio: 'Isabelle has a strong understanding of cultural nuances in translations.'
+            },
+            'Jack Smith': {
+                expertise: 'Russian and English Translation',
+                languages: 'Russian, English',
+                bio: 'Jack specializes in translating technical documents and has lived in Russia for several years.'
+            }
+        };
+
+        if (freelancers[name]) {
+            document.getElementById('freelancer-name').textContent = name;
+            document.getElementById('expertise').textContent = freelancers[name].expertise;
+            document.getElementById('languages').textContent = freelancers[name].languages;
+            document.getElementById('bio').textContent = freelancers[name].bio;
+        } else {
+            document.getElementById('freelancer-name').textContent = 'Freelancer Not Found';
+        }
+    </script>
+</body>
+</html>

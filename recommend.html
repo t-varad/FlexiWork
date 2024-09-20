@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Jobs - FLEXIWORK</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            padding-top: 60px;
+            /* Prevent content from overlapping with fixed navbar */
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffa500;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Recommended Jobs Section */
+        .recommend-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .recommend-section h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .recommend-section p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .recommend-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ffa500;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            /* Make it behave like a button */
+        }
+
+        .recommend-button:hover {
+            background-color: darkorange;
+        }
+
+        /* Job Listing Section */
+        .job-listing {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .job-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+
+        .job-card:hover {
+            transform: scale(1.05);
+        }
+
+        .job-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .job-description {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .job-details {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .apply-button {
+            background-color: #ffa500;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .apply-button:hover {
+            background-color: #e69500;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .job-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="job.html">Find a Job</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Recommended Jobs Section -->
+        <section class="recommend-section">
+            <h1>Recommended Jobs Just for You</h1>
+            <p>Based on your profile and preferences, our AI-based recommendations are here.</p>
+            <a href="job.html" class="recommend-button">Back to Find a Job</a>
+        </section>
+
+        <!-- Job Listing Section -->
+        <section class="job-listing">
+            <!-- Job Card 1 -->
+            <div class="job-card">
+                <div class="job-title">Freelance Content Writer for Health Blog</div>
+                <div class="job-description">
+                    Seeking a skilled content writer to produce engaging and informative articles for a health and
+                    wellness blog. Topics include nutrition, fitness, and mental health.
+                </div>
+                <div class="job-details">
+                    <strong>Budget:</strong> $150 - $200 <br>
+                    <strong>Deadline:</strong> 10 days
+                </div>
+                <!-- <button class="apply-button">Apply Now</button> -->
+            </div>
+
+            <!-- Job Card 2 -->
+            <div class="job-card">
+                <div class="job-title">Illustrator for Children's Book</div>
+                <div class="job-description">
+                    We need an illustrator to create whimsical and captivating illustrations for a children’s book.
+                    Experience with children’s literature is preferred.
+                </div>
+                <div class="job-details">
+                    <strong>Budget:</strong> $300 <br>
+                    <strong>Deadline:</strong> 14 days
+                </div>
+                <!-- <button class="apply-button">Apply Now</button> -->
+            </div>
+
+            <!-- Job Card 3 -->
+            <div class="job-card">
+                <div class="job-title">SEO Specialist for E-Commerce Site</div>
+                <div class="job-description">
+                    Looking for an SEO specialist to optimize our e-commerce site for search engines. Experience with
+                    on-page and off-page SEO required.
+                </div>
+                <div class="job-details">
+                    <strong>Budget:</strong> $250 - $400 <br>
+                    <strong>Deadline:</strong> 7 days
+                </div>
+                <!-- <button class="apply-button">Apply Now</button> -->
+            </div>
+
+            <!-- Add more job cards as needed -->
+        </section>
+    </div>
+</body>
+
+</html>

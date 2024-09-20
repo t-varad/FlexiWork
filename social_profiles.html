@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .profile-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .profile {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none; /* Hide all profiles by default */
+        }
+
+        .back-button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="nav-right">
+                <a href="#profile">Profile</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <h1>Social Profiles</h1>
+
+        <div class="profile" id="alice">
+            <h2>Alice Green</h2>
+            <p><strong>Skills:</strong> Social Media Manager</p>
+            <p><strong>Experience:</strong> 5 years in social management</p>
+            <p><strong>Rate:</strong> $40/hour</p>
+            <p><strong>Contact:</strong> alice.green@freelance.com</p>
+        </div>
+
+        <div class="profile" id="bob">
+            <h2>Bob White</h2>
+            <p><strong>Skills:</strong> Content Creator</p>
+            <p><strong>Experience:</strong> 3 years in content creation</p>
+            <p><strong>Rate:</strong> $30/hour</p>
+            <p><strong>Contact:</strong> bob.white@freelance.com</p>
+        </div>
+
+        <div class="profile" id="cathy">
+            <h2>Cathy Black</h2>
+            <p><strong>Skills:</strong> Community Manager</p>
+            <p><strong>Experience:</strong> 4 years in community management</p>
+            <p><strong>Rate:</strong> $35/hour</p>
+            <p><strong>Contact:</strong> cathy.black@freelance.com</p>
+        </div>
+
+        <div class="profile" id="david">
+            <h2>David Brown</h2>
+            <p><strong>Skills:</strong> Social Media Strategist</p>
+            <p><strong>Experience:</strong> 6 years in social strategy</p>
+            <p><strong>Rate:</strong> $50/hour</p>
+            <p><strong>Contact:</strong> david.brown@freelance.com</p>
+        </div>
+
+        <div class="profile" id="eve">
+            <h2>Eve Davis</h2>
+            <p><strong>Skills:</strong> Brand Ambassador</p>
+            <p><strong>Experience:</strong> 5 years in brand management</p>
+            <p><strong>Rate:</strong> $45/hour</p>
+            <p><strong>Contact:</strong> eve.davis@freelance.com</p>
+        </div>
+
+        <button class="back-button" onclick="window.history.back()">Back to Services</button>
+    </div>
+
+    <script>
+        const hash = window.location.hash;
+        if (hash) {
+            const profiles = document.querySelectorAll('.profile');
+            profiles.forEach(profile => profile.style.display = 'none');
+            const profileToShow = document.querySelector(hash);
+            if (profileToShow) {
+                profileToShow.style.display = 'block';
+            }
+        } else {
+            window.location.href = 'social_management_services.html';
+        }
+    </script>
+</body>
+</html>

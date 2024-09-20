@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustration Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .profile-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .profile {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none; /* Hide all profiles by default */
+        }
+
+        .back-button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="nav-right">
+                <a href="#profile">Profile</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <h1>Illustration Profiles</h1>
+
+        <div class="profile" id="anna">
+            <h2>Anna Green</h2>
+            <p><strong>Skills:</strong> Children's Book Illustrator</p>
+            <p><strong>Experience:</strong> 5 years in children's book illustration</p>
+            <p><strong>Rate:</strong> $70/page</p>
+            <p><strong>Contact:</strong> anna.green@freelance.com</p>
+        </div>
+
+        <div class="profile" id="ben">
+            <h2>Ben White</h2>
+            <p><strong>Skills:</strong> Concept Artist</p>
+            <p><strong>Experience:</strong> 4 years in concept art</p>
+            <p><strong>Rate:</strong> $80/hour</p>
+            <p><strong>Contact:</strong> ben.white@freelance.com</p>
+        </div>
+
+        <div class="profile" id="cathy">
+            <h2>Cathy Black</h2>
+            <p><strong>Skills:</strong> Graphic Illustrator</p>
+            <p><strong>Experience:</strong> 3 years in graphic illustration</p>
+            <p><strong>Rate:</strong> $60/hour</p>
+            <p><strong>Contact:</strong> cathy.black@freelance.com</p>
+        </div>
+
+        <div class="profile" id="david">
+            <h2>David Grey</h2>
+            <p><strong>Skills:</strong> Digital Illustrator</p>
+            <p><strong>Experience:</strong> 5 years in digital illustration</p>
+            <p><strong>Rate:</strong> $75/hour</p>
+            <p><strong>Contact:</strong> david.grey@freelance.com</p>
+        </div>
+
+        <div class="profile" id="evelyn">
+            <h2>Evelyn Blue</h2>
+            <p><strong>Skills:</strong> Fine Art Illustrator</p>
+            <p><strong>Experience:</strong> 6 years in fine art illustration</p>
+            <p><strong>Rate:</strong> $100/hour</p>
+            <p><strong>Contact:</strong> evelyn.blue@freelance.com</p>
+        </div>
+
+        <button class="back-button" onclick="window.history.back()">Back to Services</button>
+    </div>
+
+    <script>
+        const hash = window.location.hash;
+        if (hash) {
+            const profiles = document.querySelectorAll('.profile');
+            profiles.forEach(profile => profile.style.display = 'none');
+            const profileToShow = document.querySelector(hash);
+            if (profileToShow) {
+                profileToShow.style.display = 'block';
+            }
+        } else {
+            window.location.href = 'illustration_services.html';
+        }
+    </script>
+</body>
+</html>

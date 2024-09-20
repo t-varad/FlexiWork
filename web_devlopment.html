@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Freelancers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6; /* Light orange background */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .freelancer-list-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .freelancer-list-container h1 {
+            margin-bottom: 20px;
+        }
+
+        /* Grid layout for freelancers */
+        .freelancer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three freelancers per row */
+            gap: 5px; /* Reduced gap between boxes */
+            justify-items: center; /* Center items within each grid cell */
+        }
+
+        .freelancer {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px; /* Increased padding */
+            width: 320px; /* Increased width */
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .freelancer h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .freelancer button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .freelancer button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="nav-right">
+                <a href="#profile">Profile</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="freelancer-list-container">
+        <h1>Available Freelancers for Web Development</h1>
+
+        <div class="freelancer-grid">
+            <div class="freelancer">
+                <h2>Freelancer: John Smith</h2>
+                <p>Expert in HTML, CSS, JavaScript</p>
+                <button onclick="location.href='freelancer_profile.html?name=John%20Smith'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: Lisa Johnson</h2>
+                <p>Specialized in React and Node.js</p>
+                <button onclick="location.href='freelancer_profile.html?name=Lisa%20Johnson'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: Michael Brown</h2>
+                <p>Full Stack Developer with PHP & Laravel</p>
+                <button onclick="location.href='freelancer_profile.html?name=Michael%20Brown'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: Sarah Lee</h2>
+                <p>Front-end Developer - Angular, Vue</p>
+                <button onclick="location.href='freelancer_profile.html?name=Sarah%20Lee'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: David Green</h2>
+                <p>Backend Developer - Node.js, Python</p>
+                <button onclick="location.href='freelancer_profile.html?name=David%20Green'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: Emily Davis</h2>
+                <p>Expert in WordPress & eCommerce</p>
+                <button onclick="location.href='freelancer_profile.html?name=Emily%20Davis'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: Chris Wilson</h2>
+                <p>Specialist in Java & Spring Boot</p>
+                <button onclick="location.href='freelancer_profile.html?name=Chris%20Wilson'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: Anna Harris</h2>
+                <p>UI/UX Designer and Front-end Dev</p>
+                <button onclick="location.href='freelancer_profile.html?name=Anna%20Harris'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: Jessica Lewis</h2>
+                <p>Expert in PHP, MySQL, and Laravel</p>
+                <button onclick="location.href='freelancer_profile.html?name=Jessica%20Lewis'">Show Profile</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

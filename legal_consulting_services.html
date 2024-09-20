@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Consulting Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .freelancer {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            max-width: 250px;
+            text-align: center;
+        }
+
+        button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+            
+        </div>
+    </nav>
+
+    <h1 style="text-align: center;">Available Legal Consultants</h1>
+
+    <div class="container">
+        <div class="freelancer">
+            <h2>John Doe</h2>
+            <p>Corporate Lawyer</p>
+            <button onclick="location.href='legal_profiles.html#john'">Show Profile</button>
+        </div>
+        <div class="freelancer">
+            <h2>Jane Smith</h2>
+            <p>Intellectual Property Lawyer</p>
+            <button onclick="location.href='legal_profiles.html#jane'">Show Profile</button>
+        </div>
+        <div class="freelancer">
+            <h2>Emily Davis</h2>
+            <p>Family Lawyer</p>
+            <button onclick="location.href='legal_profiles.html#emily'">Show Profile</button>
+        </div>
+        <div class="freelancer">
+            <h2>Michael Brown</h2>
+            <p>Tax Lawyer</p>
+            <button onclick="location.href='legal_profiles.html#michael'">Show Profile</button>
+        </div>
+        <div class="freelancer">
+            <h2>Sarah Wilson</h2>
+            <p>Criminal Defense Lawyer</p>
+            <button onclick="location.href='legal_profiles.html#sarah'">Show Profile</button>
+        </div>
+    </div>
+</body>
+</html>

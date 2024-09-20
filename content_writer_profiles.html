@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Writers Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6; /* Light orange background */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .profile-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .profile {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none; /* Hide all profiles by default */
+        }
+
+        .back-button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="nav-right">
+                <a href="#profile">Profile</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <h1>Content Writers Profiles</h1>
+
+        <!-- Profile for Olivia Brown -->
+        <div class="profile" id="olivia">
+            <h2>Olivia Brown</h2>
+            <p><strong>Skills:</strong> SEO and Blog Writing</p>
+            <p><strong>Experience:</strong> 5 years in content writing</p>
+            <p><strong>Rate:</strong> $30/hour</p>
+            <p><strong>Contact:</strong> olivia.brown@freelance.com</p>
+        </div>
+
+        <!-- Profile for James Smith -->
+        <div class="profile" id="james">
+            <h2>James Smith</h2>
+            <p><strong>Skills:</strong> Technical Writing</p>
+            <p><strong>Experience:</strong> 4 years in content writing</p>
+            <p><strong>Rate:</strong> $35/hour</p>
+            <p><strong>Contact:</strong> james.smith@freelance.com</p>
+        </div>
+
+        <!-- Profile for Emma Johnson -->
+        <div class="profile" id="emma">
+            <h2>Emma Johnson</h2>
+            <p><strong>Skills:</strong> Copywriting and Advertising</p>
+            <p><strong>Experience:</strong> 6 years in content writing</p>
+            <p><strong>Rate:</strong> $40/hour</p>
+            <p><strong>Contact:</strong> emma.johnson@freelance.com</p>
+        </div>
+
+        <!-- Profile for Liam Wilson -->
+        <div class="profile" id="liam">
+            <h2>Liam Wilson</h2>
+            <p><strong>Skills:</strong> Creative Writing and Blogging</p>
+            <p><strong>Experience:</strong> 3 years in content writing</p>
+            <p><strong>Rate:</strong> $25/hour</p>
+            <p><strong>Contact:</strong> liam.wilson@freelance.com</p>
+        </div>
+
+        <!-- Profile for Ava Davis -->
+        <div class="profile" id="ava">
+            <h2>Ava Davis</h2>
+            <p><strong>Skills:</strong> Content Strategy and Editing</p>
+            <p><strong>Experience:</strong> 7 years in content writing</p>
+            <p><strong>Rate:</strong> $50/hour</p>
+            <p><strong>Contact:</strong> ava.davis@freelance.com</p>
+        </div>
+
+        <!-- Profile for Noah Garcia -->
+        <div class="profile" id="noah">
+            <h2>Noah Garcia</h2>
+            <p><strong>Skills:</strong> Social Media Content</p>
+            <p><strong>Experience:</strong> 5 years in content writing</p>
+            <p><strong>Rate:</strong> $30/hour</p>
+            <p><strong>Contact:</strong> noah.garcia@freelance.com</p>
+        </div>
+
+        <!-- Profile for Isabella Martinez -->
+        <div class="profile" id="isabella">
+            <h2>Isabella Martinez</h2>
+            <p><strong>Skills:</strong> Website Content and Copywriting</p>
+            <p><strong>Experience:</strong> 4 years in content writing</p>
+            <p><strong>Rate:</strong> $35/hour</p>
+            <p><strong>Contact:</strong> isabella.martinez@freelance.com</p>
+        </div>
+
+        <!-- Profile for Elijah Lee -->
+        <div class="profile" id="elijah">
+            <h2>Elijah Lee</h2>
+            <p><strong>Skills:</strong> Ghostwriting and E-books</p>
+            <p><strong>Experience:</strong> 6 years in content writing</p>
+            <p><strong>Rate:</strong> $45/hour</p>
+            <p><strong>Contact:</strong> elijah.lee@freelance.com</p>
+        </div>
+
+        <!-- Profile for Sophia Young -->
+        <div class="profile" id="sophia">
+            <h2>Sophia Young</h2>
+            <p><strong>Skills:</strong> Article Writing and Research</p>
+            <p><strong>Experience:</strong> 5 years in content writing</p>
+            <p><strong>Rate:</strong> $30/hour</p>
+            <p><strong>Contact:</strong> sophia.young@freelance.com</p>
+        </div>
+
+        <!-- Profile for Jackson White -->
+        <div class="profile" id="jackson">
+            <h2>Jackson White</h2>
+            <p><strong>Skills:</strong> Proofreading and Editing</p>
+            <p><strong>Experience:</strong> 7 years in content writing</p>
+            <p><strong>Rate:</strong> $40/hour</p>
+            <p><strong>Contact:</strong> jackson.white@freelance.com</p>
+        </div>
+
+        <button class="back-button" onclick="window.history.back()">Back to Services</button>
+    </div>
+
+    <script>
+        // Get the URL hash
+        const hash = window.location.hash;
+        if (hash) {
+            // Hide all profiles
+            const profiles = document.querySelectorAll('.profile');
+            profiles.forEach(profile => profile.style.display = 'none');
+
+            // Show the specific profile based on the hash
+            const profileToShow = document.querySelector(hash);
+            if (profileToShow) {
+                profileToShow.style.display = 'block';
+            }
+        } else {
+            // If no hash, redirect back to the services page
+            window.location.href = 'content_writer_services.html';
+        }
+    </script>
+</body>
+</html>

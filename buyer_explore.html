@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexiwork Platform</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            height: 100vh;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+        }
+
+        nav input[type="text"] {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: none;
+        }
+
+        /* Services Section */
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-height: 70vh; /* Maximum height for the container */
+            overflow-y: auto; /* Enable scrolling */
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .service-box {
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 1.2rem;
+            transition: transform 0.2s ease;
+            position: relative;
+           
+        }
+        .logo a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+
+        .service-box img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .service-box:hover {
+            transform: translateY(-5px);
+            border-color: #333;
+        }
+
+        .service-title {
+            margin-top: 10px;
+            font-weight: bold;
+            
+        }
+
+        /* Custom Scrollbar */
+        .services-container::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .services-container::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+        .qw{
+            text-decoration: none;
+            color: #333;
+        }
+
+        .services-container::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo"><a href="index.html">Flexiwork</a></div>
+        <input type="text" id="search-bar" placeholder="Search for services...">
+    </nav>
+
+    <!-- Services Section -->
+    <div class="services-container" id="services-container">
+        <!-- Service Boxes with Images -->
+        <div class="service-box" data-service="Video Editing">
+           <a href="video_editing_services.html" class="qw" ><img src="v.png" alt="Video Editing">
+            <div class="service-title" >Video Editing</div></a> 
+        </div>
+
+
+        <div class="service-box" data-service="Content Writing">
+            <a href="content_writers_services.html" class="qw">     
+                <img src="cw.png" alt="Content Writing">
+                <div class="service-title">Content Writing</div>
+            </a>
+        </div>
+
+<!-- aditya -->
+
+
+        <div class="service-box" data-service="Translation">
+            <a href="translation_services.html" class="qw">
+            <img src="t.png" alt="Translation">
+            <div class="service-title">Translation</div>
+            </a>
+        </div>
+
+        <div class="service-box" data-service="Graphic Design">
+            <a href="graphic_design_services.html" class="qw">
+            <img src="gra_de.avif" alt="Graphic Design">
+            <div class="service-title">Graphic Design</div>
+            </a>
+        </div>
+
+        <div class="service-box" data-service="Web Development">
+            <a href="web_devlopment.html" class="qw">
+            <img src="web_d.jpeg" alt="Web Development">
+            <div class="service-title">Web Development</div>
+            </a>
+        </div>
+        <div class="service-box" data-service="Mobile App Development">
+            <a href="mobile_app_development_services.html" class="qw">
+            <img src="mob_app.jpeg" alt="Mobile App Development">
+            <div class="service-title">Mobile App Development</div>
+            </a>
+        </div>
+        <div class="service-box" data-service="SEO Services">
+            <a href="seo_services.html" class="qw">
+            <img src="seo.jpg" alt="SEO Services">
+            <div class="service-title">SEO Services</div>
+            </a>
+        </div>
+
+        <div class="service-box" data-service="Social Media Management">
+            <a href="social_management_services.html" class="qw">
+            <img src="social_m.png" alt="Social Media Management">
+            <div class="service-title">Social Media Management</div>
+        </a>
+        </div>
+
+        <div class="service-box" data-service="Digital Marketing">
+            <a href="digital_marketing_services.html" class="qw">
+            <img src="digi_mar.jpg" alt="Digital Marketing">
+            <div class="service-title">Digital Marketing</div>
+            </a>
+        </div>
+        <div class="service-box" data-service="Data Entry">
+            <a href="data_entry_services.html" class="qw">
+            <img src="data_en.png" alt="Data Entry">
+            <div class="service-title">Data Entry</div>
+        </a>
+        </div>
+        <div class="service-box" data-service="Virtual Assistance">
+            <a href="virtual_assistance_services.html" class="qw">
+            <img src="V_A.jpg" alt="Virtual Assistance">
+            <div class="service-title">Virtual Assistance</div>
+        </a>
+        </div>
+        <div class="service-box" data-service="UI/UX Design">
+            <a href="uiux_design_services.html" class="qw">
+            <img src="uiux.jpg" alt="UI/UX Design">
+            <div class="service-title">UI/UX Design</div>
+        </a>
+        </div>
+        <div class="service-box" data-service="Customer Support">
+            <a href="customer_support_services.html" class="qw">
+            <img src="cus_supp.avif" alt="Customer Support">
+            <div class="service-title">Customer Support</div>
+        </a>
+        </div>
+        <div class="service-box" data-service="Project Management">
+            <a href="project_management_services.html" class="qw">
+            <img src="pro_mana.png" alt="Project Management">
+            <div class="service-title">Project Management</div>
+        </a>
+        </div>
+        <div class="service-box" data-service="Product Design">
+            <a href="product_design_profiles.html" class="qw">
+            <img src="illst.webp" alt="Product Design">
+            <div class="service-title">Product Design</div>
+        </a>
+        </div>
+        <div class="service-box" data-service="Consulting Services">
+            <a href="consulting_services.html" class="qw">
+            <img src="consul_ser.avif" alt="Consulting Services">
+            <div class="service-title">Consulting Services</div>
+        </a>
+        </div>
+        <div class="service-box" data-service="Photography">
+            <a href="photography_services.html" class="qw">
+            <img src="photo.jpg" alt="Photography">
+            <div class="service-title">Photography</div>
+        </a>
+        </div>
+        <div class="service-box" data-service="Video Production">
+            <a href="video_production_services.html" class="qw">
+            <img src="v_c.jpg" alt="Video Production">
+            <div class="service-title">Video Production</div>
+        </a>
+        </div>
+        <div class="service-box" data-service="Illustration">
+            <a href="illustration_services.html" class="qw">
+            <img src="illst.webp" alt="Illustration">
+            <div class="service-title">Illustration</div>
+        </a>
+        </div>
+        <div class="service-box" data-service="Legal Consulting">
+            <a href="legal_consulting_services.html" class="q">
+            <img src="Lc.jpg" alt="Legal Consulting">
+            <div class="service-title">Legal Consulting</div>
+        </a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("search-bar").addEventListener("input", function() {
+            let filter = this.value.toLowerCase();
+            let serviceBoxes = document.querySelectorAll(".service-box");
+
+            // Sort and display services based on search query
+            serviceBoxes.forEach(function(box) {
+                let service = box.getAttribute("data-service").toLowerCase();
+                if (service.includes(filter)) {
+                    box.style.order = -1; // Bring matched service to the front
+                } else {
+                    box.style.order = ''; // Reset order for unmatched services
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Services Freelancers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6; /* Light orange background */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .freelancer-list-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .freelancer-list-container h1 {
+            margin-bottom: 20px;
+        }
+
+        /* Grid layout for freelancers */
+        .freelancer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three freelancers per row */
+            gap: 10px; /* Reduced gap between boxes */
+            justify-items: center; /* Center items within each grid cell */
+        }
+
+        .freelancer {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px; /* Increased padding */
+            width: 320px; /* Increased width */
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .freelancer h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .freelancer button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .freelancer button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+           
+        </div>
+    </nav>
+
+    <div class="freelancer-list-container">
+        <h1>Available Freelancers for Translation Services</h1>
+
+        <div class="freelancer-grid">
+            <div class="freelancer">
+                <h2>Freelancer: Alice Walker</h2>
+                <p>Expert in English to Spanish Translation</p>
+                <button onclick="location.href='freelancer_profile1.html?name=Alice%20Walker'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: Bob Martinez</h2>
+                <p>Fluent in French and Italian</p>
+                <button onclick="location.href='freelancer_profile1.html?name=Bob%20Martinez'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: Carol Kim</h2>
+                <p>Specialist in Korean to English Translation</p>
+                <button onclick="location.href='freelancer_profile1.html?name=Carol%20Kim'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: David Chen</h2>
+                <p>Expert in Chinese to English Translation</p>
+                <button onclick="location.href='freelancer_profile1.html?name=David%20Chen'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: Emma Johnson</h2>
+                <p>English to German Translator</p>
+                <button onclick="location.href='freelancer_profile1.html?name=Emma%20Johnson'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: Frank Brown</h2>
+                <p>Expert in Japanese Translation</p>
+                <button onclick="location.href='freelancer_profile1.html?name=Frank%20Brown'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: Grace Taylor</h2>
+                <p>Fluent in Portuguese and Spanish</p>
+                <button onclick="location.href='freelancer_profile1.html?name=Grace%20Taylor'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: Henry Wilson</h2>
+                <p>Specialist in Arabic Translation</p>
+                <button onclick="location.href='freelancer_profile1.html?name=Henry%20Wilson'">Show Profile</button>
+            </div>
+
+            <div class="freelancer">
+                <h2>Freelancer: Isabelle Garcia</h2>
+                <p>Expert in Hindi to English Translation</p>
+                <button onclick="location.href='freelancer_profile1.html?name=Isabelle%20Garcia'">Show Profile</button>
+            </div>
+
+           
+        </div>
+    </div>
+</body>
+</html>

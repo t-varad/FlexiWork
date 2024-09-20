@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App Development Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .profile-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .profile {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none; /* Hide all profiles by default */
+        }
+
+        .back-button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="nav-right">
+                <a href="#profile">Profile</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <h1>Mobile App Development Profiles</h1>
+
+        <div class="profile" id="emma">
+            <h2>Emma Davis</h2>
+            <p><strong>Skills:</strong> iOS Developer</p>
+            <p><strong>Experience:</strong> 5 years in mobile development</p>
+            <p><strong>Rate:</strong> $50/hour</p>
+            <p><strong>Contact:</strong> emma.davis@freelance.com</p>
+        </div>
+
+        <div class="profile" id="chris">
+            <h2>Chris Martin</h2>
+            <p><strong>Skills:</strong> Android Developer</p>
+            <p><strong>Experience:</strong> 4 years in mobile development</p>
+            <p><strong>Rate:</strong> $45/hour</p>
+            <p><strong>Contact:</strong> chris.martin@freelance.com</p>
+        </div>
+
+        <div class="profile" id="olivia">
+            <h2>Olivia Taylor</h2>
+            <p><strong>Skills:</strong> React Native Developer</p>
+            <p><strong>Experience:</strong> 3 years in mobile development</p>
+            <p><strong>Rate:</strong> $40/hour</p>
+            <p><strong>Contact:</strong> olivia.taylor@freelance.com</p>
+        </div>
+
+        <div class="profile" id="james">
+            <h2>James Wilson</h2>
+            <p><strong>Skills:</strong> Flutter Developer</p>
+            <p><strong>Experience:</strong> 2 years in mobile development</p>
+            <p><strong>Rate:</strong> $38/hour</p>
+            <p><strong>Contact:</strong> james.wilson@freelance.com</p>
+        </div>
+
+        <div class="profile" id="charlotte">
+            <h2>Charlotte Johnson</h2>
+            <p><strong>Skills:</strong> Cross-platform Developer</p>
+            <p><strong>Experience:</strong> 4 years in mobile development</p>
+            <p><strong>Rate:</strong> $45/hour</p>
+            <p><strong>Contact:</strong> charlotte.johnson@freelance.com</p>
+        </div>
+
+        <button class="back-button" onclick="window.history.back()">Back to Services</button>
+    </div>
+
+    <script>
+        const hash = window.location.hash;
+        if (hash) {
+            const profiles = document.querySelectorAll('.profile');
+            profiles.forEach(profile => profile.style.display = 'none');
+            const profileToShow = document.querySelector(hash);
+            if (profileToShow) {
+                profileToShow.style.display = 'block';
+            }
+        } else {
+            window.location.href = 'mobile_app_development_services.html';
+        }
+    </script>
+</body>
+</html>

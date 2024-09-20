@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .profile-container {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .profile {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            display: none; /* Hide all profiles by default */
+        }
+
+        .back-button {
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#projects">My Projects</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="nav-right">
+                <a href="#profile">Profile</a>
+                <a href="#logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <h1>UI/UX Profiles</h1>
+
+        <div class="profile" id="sophie">
+            <h2>Sophie Taylor</h2>
+            <p><strong>Skills:</strong> UI/UX Designer</p>
+            <p><strong>Experience:</strong> 6 years in design</p>
+            <p><strong>Rate:</strong> $60/hour</p>
+            <p><strong>Contact:</strong> sophie.taylor@freelance.com</p>
+        </div>
+
+        <div class="profile" id="james">
+            <h2>James Smith</h2>
+            <p><strong>Skills:</strong> Product Designer</p>
+            <p><strong>Experience:</strong> 5 years in product design</p>
+            <p><strong>Rate:</strong> $55/hour</p>
+            <p><strong>Contact:</strong> james.smith@freelance.com</p>
+        </div>
+
+        <div class="profile" id="ava">
+            <h2>Ava Johnson</h2>
+            <p><strong>Skills:</strong> User Experience Researcher</p>
+            <p><strong>Experience:</strong> 4 years in UX research</p>
+            <p><strong>Rate:</strong> $50/hour</p>
+            <p><strong>Contact:</strong> ava.johnson@freelance.com</p>
+        </div>
+
+        <div class="profile" id="oliver">
+            <h2>Oliver Brown</h2>
+            <p><strong>Skills:</strong> UI Designer</p>
+            <p><strong>Experience:</strong> 3 years in UI design</p>
+            <p><strong>Rate:</strong> $45/hour</p>
+            <p><strong>Contact:</strong> oliver.brown@freelance.com</p>
+        </div>
+
+        <div class="profile" id="emma">
+            <h2>Emma Wilson</h2>
+            <p><strong>Skills:</strong> UX Designer</p>
+            <p><strong>Experience:</strong> 4 years in UX design</p>
+            <p><strong>Rate:</strong> $50/hour</p>
+            <p><strong>Contact:</strong> emma.wilson@freelance.com</p>
+        </div>
+
+        <button class="back-button" onclick="window.history.back()">Back to Services</button>
+    </div>
+
+    <script>
+        const hash = window.location.hash;
+        if (hash) {
+            const profiles = document.querySelectorAll('.profile');
+            profiles.forEach(profile => profile.style.display = 'none');
+            const profileToShow = document.querySelector(hash);
+            if (profileToShow) {
+                profileToShow.style.display = 'block';
+            }
+        } else {
+            window.location.href = 'uiux_design_services.html';
+        }
+    </script>
+</body>
+</html>
